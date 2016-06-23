@@ -33,13 +33,10 @@ app.set('views', path.join(__dirname,'views'));
  */
 
 // get all users
-app.get('/users',function(req,res,next){
+app.get('/jukebox',function(req,res,next){
 	db.any('SELECT * FROM songs')
 	.then(function(data){
-
-		console.log(data[0].songname);
 		res.render('index',{ data: data });
-
 	})
 	.catch(function(err){
 		return next(err);
