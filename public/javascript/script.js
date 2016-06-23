@@ -105,19 +105,6 @@ $(document).ready(function(){
   //new object of type Juke Box
   myJukePlayer = new JukeBox();
 
-/*
-  //list all the tracks from the array to the main page and add an event on click so that we can play it when clicked
-  $('#list').append('<li id="1stSong" onclick = "myJukePlayer.playRequest(0)">1.mp3</li>');
-  $('#list').append('<li id="2ndSong" onclick = "myJukePlayer.playRequest(1)">2.mp3</li>');
-  $('#list').append('<li id="3rdSong" onclick = "myJukePlayer.playRequest(2)">3.mp3</li>');
-  $('#list').append('<li id="4thSong" onclick = "myJukePlayer.playRequest(3)">4.mp3</li>');
-  $('#list').append('<li id="5thSong" onclick = "myJukePlayer.playRequest(4)">5.mp3</li>');
-  $('#list').append('<li id="6thSong" onclick = "myJukePlayer.playRequest(5)">6.mp3</li>');
-  $('#list').append('<li id="7thSong" onclick = "myJukePlayer.playRequest(6)">7.mp3</li>');
-  $('#list').append('<li id="8thSong" onclick = "myJukePlayer.playRequest(7)">8.mp3</li>');
-  $('#list').append('<li id="9thSong" onclick = "myJukePlayer.playRequest(8)">9.mp3</li>');
-*/
-
   //set all the events based  on  the designated buttons(play,pause etc)
   $("#playTrack").on("click", function(){
     myJukePlayer.playTrack(currentSong);
