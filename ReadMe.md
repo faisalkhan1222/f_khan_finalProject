@@ -1,16 +1,8 @@
 Project Specifications:
+Your final project will be a polished application that you will present to class this Friday afternoon at 2pm. This project should be showcase ready - something to show potential employers. You can build off of a previous assignment/project/workshop, but you must make significant improvements/additions. The application can be front end, but I encourage you to make it fullstack and use Node and Postgres. The requirements are:
 
-1. Display at least one song on the page when the page loads
-
-2. Give the user the ability to play that song, _without_ using the "built-in" play button. This could be through a different button, through clicking or mousing over an image on the page, or any other device of your choosing.
-
-3. Give the user the ability to stop that song _without_ using the "built-in" stop button. Once again, this could be through a different button, through clicking or mousing over an image on the page, or any other device of your choosing.
-
-3. Give the user the ability to load at least one different song into the Jukebox besides the one that is loaded when the page initially renders
-
-4. The whole Jukebox should be backed by an object called Jukebox with methods to play, stop, and load songs.
-Bonus features:
-
-1. Playlist of songs, allows the user to queue up the next song
-
-2. Feature to request a random song
+    Must have a database or make an API call 
+    Clear and clean UI 
+    logical git commits
+    contains a README that explains how to start your app 
+    If using a previous assignment, substantial improvements are made
