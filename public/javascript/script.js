@@ -4,8 +4,6 @@ Dated: June 13 2016
 
 An Mp3 player without using the built in player
 */
-
-//array to contain local mp3 files
 //All the mp3 files are downloaded from the following website(open source)
 //http://www.newgrounds.com/audio
 
@@ -19,9 +17,12 @@ var audioElement = document.createElement('audio');
 $(document).ready(function(){
   console.log("The document is ready the songs were loaded properly!");
 
+  //get all the song names loaded from the DB
   var songsFromDB = document.getElementsByClassName('songs');
 
+  //array to contain  mp3 files
   var audio_files=[];
+  //get all the song names loaded from the DB and store into an array
   for(var song = 0; song < songsFromDB.length;  song++){
     audio_files[song] = "songs/"+songsFromDB[song].id;
     console.log(audio_files[song]);
@@ -29,7 +30,6 @@ $(document).ready(function(){
 
   //Juke box object
   function JukeBox(){
-
     //function to play previous track
     this.previousTrack = function(){
       paused = 'false';
