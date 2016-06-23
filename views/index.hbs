@@ -1,0 +1,69 @@
+<!--
+Author: Faisal Khan
+Dated: June 13 2016
+
+An Mp3 player without using the built in player
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Juke Box</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="javascript/script.js"></script>
+</head>
+
+<body>
+
+  <!--
+  The div containing the songs list populated through java script
+-->
+<div id="list">
+  <h1>Songs Selection</h1>
+  <!--
+  The div containing the red dice image to generate random track
+  -->
+  <div id="randomTrack">
+    <img src="images/random.png" class="buttons"/>
+  </div>
+
+{{#each data}}
+  <li class="songs" id="{{songname}}" onclick = 'myJukePlayer.playRequest({{songid}})'>{{songname}}</li>
+{{/each}}
+</div>
+
+<!--
+The div containing all the media button as images
+-->
+<div id="player">
+  <!--
+  The div containing the animation which is enabled and disabled using javascript
+-->
+<div id="animateBars">
+
+</div>
+
+<div id="previousTrack">
+  <img src="images/prev.png" class="buttons"/>
+</div>
+
+<div id="pauseTrack">
+  <img src="images/pause.png" class="buttons"/>
+</div>
+
+<div  id="playTrack">
+  <img src="images/play.png" class="buttons"/>
+</div>
+
+<div id="stopTrack">
+  <img src="images/stop.png" class="buttons"/>
+</div>
+
+<div id="nextTrack">
+  <img src="images/next.png" class="buttons"/>
+</div>
+
+</div>
+</body>
+</html>
